@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="JavaScript" src="calcd.js"></script>
+    
+    <title>Calculadora</title>
+</head>
+<style>
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(247, 247, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 10px 5px 5px rgb(241, 219, 21);
+    
+
+}
+.botao{
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    font-size: 30px;
+    
+  
+}
+#visor{
+    width: 275px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.527) inset;
+   
+}
+.reseta{
+    background-color: rgb(219, 70, 65);
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    font-size: 30px;
+  
+}
+.calcula{
+    background-color: rgb(58, 226, 86);
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    font-size: 30px;
+    
+}
+.sinais{
+    background-color: rgb(235, 208, 85);
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    font-size: 30px;
+ 
+    }
+</style>
+<body>
+    <div id= "container">
+    <h1><strong>Calculadora Funec (Matheus e Thaiany)</strong></h1>
+    <form action="" name="calcd">
+    <input type = "text" id="visor" name="visor">
+
+   
+    
+    
+    <div id ="linha1">
+        <input type="button" value="7" class="botao" onclick="botao(value)">
+        <input type="button" value="8" class="botao" onclick="botao(value)">
+        <input type="button" value="9" class="botao" onclick="botao(value)">
+        <input type="button" value="+" class="sinais" onclick="botao(value)">
+    </div>
+    <div id ="linha2">
+        <input type="button" value="4" class="botao" onclick="botao(value)">
+        <input type="button" value="5" class="botao" onclick="botao(value)">
+        <input type="button" value="6" class="botao" onclick="botao(value)">
+        <input type="button" value="-" class="sinais" onclick="botao(value)">
+    </div>
+    <div id ="linha3">
+        <input type="button" value="1" class="botao" onclick="botao(value)">
+        <input type="button" value="2" class="botao" onclick="botao(value)">
+        <input type="button" value="3" class="botao" onclick="botao(value)">
+        <input type="button" value="*" class="sinais" onclick="botao(value)">
+    </div>
+    <div id ="linha4">
+        <input type="button" value="C" class="reseta" onclick="reseta()">
+        <input type="button" value="0" class="botao" onclick="botao(value)">
+        <input type="button" value="=" class="calcula" onclick="calcula()">
+        <input type="button" value="/" class="sinais" onclick="botao(value)">
+    </div>
+    </div>
+</form>
+</body>
+</html>
